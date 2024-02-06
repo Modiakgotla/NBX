@@ -1,0 +1,143 @@
+/* Updated styles for header */
+.header {
+   /* background-color: black; */
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    color: orange;
+}
+
+/* Existing styles remain unchanged */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.paragraph{
+    padding: 20px;
+    text-align: center;
+    color: orange;
+    margin-bottom: -300px;
+    margin-left: -311px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0)); /* Updated background color with linear gradient */
+}
+
+.container{
+    width: 50%;
+    height: 60vh;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow:  0px 5px 25px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color:linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0)); /* Added background color */
+}
+
+.container form{
+    width: 70%;
+    height: 700%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputBox{
+    width: 70%;
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.inputBox input[type="text"], .inputBox input[type="tel"]{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 0px 10px;
+    font-size: 16px;
+    color: #444;
+}
+
+.inputBox textarea{
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 0px 10px;
+    font-size: 16px;
+    color: #444;
+}
+
+.inputBox button{
+    width: 100%;    
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: orange;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.inputBox button:hover{
+    background: rgb(255, 94, 0);
+    transition: all 0.3s ease;
+}
+
+::placeholder{
+    font-size: 16px;
+}
+
+.alert{
+    width: 100%;
+    background:  rgb(255, 94, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    display: none;
+}
+/* Styles for the "choose file" button */
+.inputBox input[type="file"] {
+    display: none; /* Hide the default file input */
+}
+
+.inputBox label {
+    display: inline-block;
+    background: orange; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Button border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.inputBox label:hover {
+    background: rgb(255, 94, 0); /* Button background color on hover */
+}
+#selectedFileName {
+    font-size: 14px; /* Adjust font size as needed */
+    color: #333; /* Text color */
+    margin-left: 10px; /* Add some space between the button and the file name */
+}
